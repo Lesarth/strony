@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formularz js</title>
+    <script>
+        function wyswietl() {
+first=document.formularz.pierwsza.value;
+second=document.formularz.druga.value;
+dodawanie=parseFloat(first)+parseFloat(second);
+document.getElementById("suma").innerHTML=(dodawanie)
+}
+</script>
+</head>
+<body>
+    <form name="formularz">
+        pierwsza wartość - <input type="text" name="pierwsza"><br>
+        druga wartość - <input type="text" name="druga"><br>
+        <input type="button" value="Licz" onClick="wyswietl()">
+        <p id="suma"></p>
+    </form>
+</body>
+
+</html>
